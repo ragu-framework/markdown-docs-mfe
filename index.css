@@ -1,0 +1,45 @@
+.error {
+    font-family: Poppins, sans-serif;
+    background: #ffDDDD;
+    color: #ff0000;
+    padding: 20px;
+}
+
+.markdown {
+    font-family: Lato, sans-serif;
+    color: #2c3332;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    font-family: Poppins, sans-serif;
+}
+
+.markdown pre {
+    box-sizing: border-box;
+    background: rgb(44, 51, 50);
+    border-radius: 20px;
+    padding: 1rem;
+    color: white;
+    width: 100%;
+    overflow: auto;
+    font-family: "Source Code Pro", monospace;
+}
+
+.markdown a {
+    color: #BF265E;
+}
+
+.markdown p code {
+    background: #c8d0d0;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.markdown code {
+    font-family: "Source Code Pro", monospace;
+}

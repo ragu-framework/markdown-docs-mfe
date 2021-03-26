@@ -1,0 +1,23 @@
+{
+  "name": "markdown-docs-mfe",
+  "version": "0.0.1",
+  "description": "A simple markdown Micro-frontend using ragu-simple-adapter",
+  "main": "index.js",
+  "scripts": {
+    "dev:mfe": "ragu-cli dev --file index.js --webpack webpack.client.js --webpackServerSide webpack.server.js --port 4300",
+    "build:mfe": "ragu-cli static --file index.js --webpack webpack.client.js --baseurl https://ragu-framework.github.io/markdown-docs-mfe"
+  },
+  "repository": "https://github.com/ragu-framework/markdown-docs-mfe",
+  "author": "Maniero <carlosmaniero@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "css-loader": "^5.2.0",
+    "highlight.js": "^10.7.1",
+    "marked": "^2.0.1",
+    "mini-css-extract-plugin": "^1.3.9",
+    "ragu-cli": "^0.0.42",
+    "ragu-simple-adapter": "^0.0.12",
+    "webpack": "^5.28.0"
+  }
+}
