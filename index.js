@@ -31,20 +31,17 @@ export default ({element, params}) => {
     }
   }
 
-  if (!params.url.startsWith('https://raw.githubusercontent.com/ragu-framework/')) {
-    return {
-      html: renderError('Integration Error', 'The URL must be ragu-framework markdown')
-    }
-  }
-
   return ({
     html: `loading...`,
     connectedCallback: async () => {
+
       if (params.env === 'dev') {
         createStyle('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Poppins:wght@300;500&display=swap&family=Source+Code+Pro:wght@1;300');
       }
+
       createStyle('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/atom-one-dark.min.css');
-      const response = await fetch(params.url);
+      const response = await fetch(`https://raw.githubusercontent.com/ragu-framework/${params.url}`);
+
       element.innerHTML = renderMarkdown(await response.text());
     }
   });

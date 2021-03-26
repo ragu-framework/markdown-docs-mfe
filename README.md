@@ -5,6 +5,6 @@ Usage:
 
 ```html
 <ragu-component 
-    src="https://ragu-framework.github.io/markdown-docs-mfe/index.json?url=https://raw.githubusercontent.com/ragu-framework/ragu-react-server-adapter/main/README.md">
+    src="https://ragu-framework.github.io/markdown-docs-mfe/index.json?url=ragu-react-server-adapter/main/README.md">
 </ragu-component>
 ```
